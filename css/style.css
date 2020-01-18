@@ -1,0 +1,205 @@
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: white;
+}
+
+/* HEADER CSS */
+.header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 5px 10px #888888;
+  position: fixed;
+  z-index: 100;
+}
+.header__nav ul {
+  list-style: none;
+  padding: 0;
+  margin-right: 20px;
+}
+.header__nav-item {
+  display: inline;
+  margin: 0 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.header p {
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+/* END HEADER CSS */
+
+
+/* BANNER CSS */
+.banner {
+  background-image: url(../img/architect.jpg);
+  height: 550px;
+  width: 97%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  z-index: 1;
+}
+.banner p {
+ margin: auto;
+ color: white;
+ font-size: 40px;
+ letter-spacing: 4px;
+ word-spacing: 5px;
+ transform: translateY(20px);
+}
+.banner p span {
+  display: inline-block;
+  background-color: rgba(49, 49, 49, 0.9);
+  font-weight: 700; 
+  padding: 0 10px;
+}
+/* END BANNER CSS */
+
+/* PROJECT CSS */
+.project {
+  margin: 80px 20px;
+}
+.project h1 {
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #ccc;
+  margin: 0;
+}
+.project .project__list {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 5px 20px;
+}
+.project .project__item {
+  position: relative;
+}
+.project__item img {
+  width: 100%;
+}
+.project__item p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color:rgba(24,24,24,0.8);
+  margin: 0;
+  padding: 8px 0;
+  width: 140px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+/* END PROJECT CSS */
+
+/* ABOUT CSS */
+.about {
+  margin: 80px 20px;
+}
+
+.about h1 {
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #ccc;
+  margin: 0;
+}
+.about p {
+  font-weight: 700;
+  font-size: 12px;
+  /* margin: 0; */
+}
+.about .about__team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.about__mem img {
+  width: 100%;
+}
+.about__mem h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+.about__mem h4 {
+  color: #888888;
+  margin: 10px 0; 
+  font-size: 14px;
+}
+.about__mem button {
+  border: none;
+  background-color:#f0f0ef;
+  font-weight: 700;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 12px;
+  outline: none;
+}
+/* END PROJECT CSS */
+
+/* CONTACT CSS */
+.contact {
+  margin: 0 20px;
+}
+
+.contact h1 {
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #ccc;
+  margin: 0;
+}
+.contact p {
+  font-weight: 700;
+  font-size: 14px;
+}
+.contact__form {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact__form-control {
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  border-bottom: solid 0.5px #ccc;
+  padding: 0 0 5px 10px;
+}
+.contact__form-control::placeholder {
+  font-weight: 700;
+  font-size: 14px;
+  color: #a2a2a2;
+}
+.contact__form button {
+  width: 140px;
+  color: white;
+  background-color: #252525;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  padding: 10px 0;
+  margin: 15px 0;
+  font-size: 14px;   
+}
+/* END PROJECT CSS */
